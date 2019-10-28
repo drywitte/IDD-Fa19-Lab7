@@ -21,5 +21,6 @@
 ## Part C. Make it your own
 
 **a. Find, install, and try out a node-based library and try to incorporate into your lab. Document your successes and failures (totally okay!) for your writeup. This will help others in class figure out cool new tools and capabilities.**
+https://www.npmjs.com/package/@google-cloud/vision#before-you-begin
 
 **b. Upload a video of your working modified project**
