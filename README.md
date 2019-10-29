@@ -38,4 +38,5 @@ I quickly realized however that a webcam that returns overexposed images is a te
 **b. Upload a video of your working modified project**
 
 [No face detected](https://photos.app.goo.gl/QxsZHpPq8k45wT6M7)
+
 [Face detected](https://photos.app.goo.gl/A8RXQjR1A5Ma1Cb19)
