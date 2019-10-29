@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "api-project-133102686319",
+  "private_key_id": "c68b2679cf4c7fbfc134d9fdaf99bc4b04f4c435",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCMiZeOgZCcpCDn\nJ59WZ8Uus3i3uIj2DEtOygDv4klvHVc0hsTRUQaDlcfHaV5P5ZCBedpNz52Shq8t\nRl9TW3DfGnDQkNHCM3hFG52NbxEOzDnUF3hTfOyKXK7MXcL2WU6XavgBHOXjMjez\nNZ46yAN/o8BrsDuK90r4R78ZWgiHkxi4saz3Qhvh6omlLGlEeixrlIZ/KuUUqxNT\n0vm5Gjon0eEvChWhtUgJW9rRHcLkUFWp0As6M11E+Zl2ATV3tfuahxnnc1XX6+Vk\njUWa/YrPRETa9deemrKDjQVpDHdmFCjEkt8+x8ac2mYTP1QIsrGuvp+DnFosSOqT\nFxtWUgpXAgMBAAECggEAEWV80cKfFIzKl+KTOj5pLbFAqblZlt+JuOyPdiJURcFj\niJiAJ4r4m/RAASK9bnVz0Fs1lzkyf69VYuzZovdoPu3GdkLe/EOjySY0eAv+GA9W\nvzbSib8mhrAXYSvgFN+UN3Eh1v1tRZTzSSdDeXJF4Jh0GsB7dmXLLXWwJaK7+JAh\nXtxdLtJ9NdG5zI+QaptU/dXqcf+2miXPcin7Z1YAuVmo8ygZXLIv5HhV7H6hD+Nq\n5cr34wl3kLP/a4ezD8vpq5GFDMozpr3apnH84QXxvS7xSANAWgxR0oB9fyB8KNgY\n1rls8MNgpBHQhO6NRY1h8+0URJfVbD9KkQK+bv9LvQKBgQDC2ujkGiL9xGKC9wJj\nJRxE/hL4vNDJBKgKCigla3tdfwJnHXEzY832I2gVXILdMSLNPeTFpyx2zmUnf08+\nwhyoel/T+PbHfWOOoRo9cYNFOGj3vMTAioc7RXtDTzFMObkNu+7NC/0/Vor9r7yG\nmmn6Ftj83huCzPL/B7G3c8ta/QKBgQC4oz12Yrmpzhs3aO8f+jupkn4vI/dZ5sE9\nEoZpSTSkSfC2PIswEOMWrZHfFaKINsing3rg6OVmaxtwWnjkL5ynqlUKsNVfeofK\nRAFPCXgqQe7eAoQSUduVcomb3e5wwppSoC5wo+kDyA4ZbV66LZ7Vf7lTAkaCU2aO\nXXzan5aM4wKBgQCb82CZz2FaASdm8hLzDuyFO2Qrt9LST+u9vUtMR63AsrpVlPbY\nznQ1Hzlaf2Qta/oSkgrbNmUb4SyMZBQkgm81WFwB5yx7lRttN/ssWgFaET/Rpz9B\nap25Dm8M/ADUpQ46s8L4UTQq0TUEvPYCNOvEwSyBlbInCakh/CJ8VSzYcQKBgFI7\nQbBsH8xkovJ2palURSYsvE46cntzrjSI/5v8oplY5QAEzujFXJ5JB2KXvB92Zr9U\na3GnyCNpKHtNj/Hw0pBJ6D4uq5kudTO8Pej5iq8nVj9CV5fhJS7WKDtnCD7oLNsH\nxCcemTS58K2abEn273qeu+cgaE663j4hnO2xjdeJAoGAbaeRtPnBG2UrxfOE/ATA\nL/XEWGaBTzCLdzSCwVVdi6t29u28jQYdKW9WU6bjYWUdZ/TodkYqsFLg6C41WSeX\nCrOjGdMiTX3mQ8BktTv7gVwSXD/YAldEtRbDrvQtKD6UwAdS3PRonJAzvOZO5NMH\niHRwCzedQoZVsgGfuBWf2M4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "doorbell@api-project-133102686319.iam.gserviceaccount.com",
+  "client_id": "118218291835186998066",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/doorbell%40api-project-133102686319.iam.gserviceaccount.com"
+}

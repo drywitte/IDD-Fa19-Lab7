@@ -46,6 +46,40 @@ http.listen(serverPort, function() {
 });
 //----------------------------------------------------------------------------//
 
+// GOOGLE_APPLICATION_CREDENTIALS="._API Project-c68b2679cf4c.json"
+const vision = require('@google-cloud/vision');
+const client = new vision.ImageAnnotatorClient();
+async function quickstart(image) {
+  // Imports the Google Cloud client library
+  console.log("quickstarting, image is " + image);
+ 
+  // Creates a client
+  const client = new vision.ImageAnnotatorClient();
+ 
+  // Performs label detection on the image file
+  const [result] = await client.labelDetection(image);
+  const labels = result.labelAnnotations;
+  console.log('Labels:');
+  let labelVals = [];
+  labels.forEach(label => labelVals.push(label.description));
+  io.emit("labelApi", 'labels: ' + labelVals.toString());
+}
+
+async function detectFaces(inputFile) {
+  // Make a call to the Vision API to detect the faces
+  const request = {image: {source: {filename: inputFile}}};
+  const results = await client.faceDetection(request);
+  const faces = results[0].faceAnnotations;
+  const numFaces = faces.length;
+  console.log(`Found ${numFaces} face${numFaces === 1 ? '' : 's'}.`);
+  io.emit("faceApi", `Found ${numFaces} face${numFaces === 1 ? '' : 's'}.`)
+  return faces;
+}
+
+
+
+
+
 //--Additions:
 //----------------------------WEBCAM SETUP------------------------------------//
 //Default options
@@ -110,6 +144,7 @@ io.on('connect', function(socket) {
     serial.write('L');
   });
 
+
   //-- Addition: This function is called when the client clicks on the `Take a picture` button.
   socket.on('takePicture', function() {
     /// First, we create a name for the new picture.
@@ -121,7 +156,10 @@ io.on('connect', function(socket) {
 
     //Third, the picture is  taken and saved to the `public/`` folder
     NodeWebcam.capture('public/'+imageName, opts, function( err, data ) {
+      console.log(err);
     io.emit('newPicture',(imageName+'.jpg')); ///Lastly, the new name is send to the client web browser.
+    detectFaces('public/' + imageName+'.jpg');
+    quickstart('public/' + imageName+'.jpg');
     /// The browser will take this new name and load the picture from the public folder.
   });
 

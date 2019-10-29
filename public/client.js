@@ -41,7 +41,10 @@ socket.on('server-msg', function(msg) {
   console.log('msg:', msg);
   switch (msg) {
     case "light":
-      document.body.style.backgroundColor = "white";
+      // document.body.style.backgroundColor = "white";
+      document.body.style.backgroundColor = "black";
+      takePicture();
+      console.log("taking picture");
       console.log("white")
       break;
     case "dark":
@@ -53,3 +56,18 @@ socket.on('server-msg', function(msg) {
       break;
   }
 });
+
+socket.on('faceApi', function(msg){
+  console.log("api hit", msg);
+  let x = document.getElementById('faceApiContent');
+  x.innerHTML = msg;
+  x.style.color = "white";
+})
+
+socket.on('labelApi', function(msg){
+  console.log("api hit", msg);
+  let x = document.getElementById('labelApiContent');
+  x.innerHTML = msg;
+  x.style.color = "white";
+})
+
